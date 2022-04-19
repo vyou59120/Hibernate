@@ -1,0 +1,6 @@
+com\spring5\models\HelloWorld.class
+com\spring5\controllers\HelloWorldController.class
+com\spring5\controllers\SignUpController.class
+com\spring5\config\SpringMvcDispatcherServletInitializer.class
+com\spring5\models\SignUpForm.class
+com\spring5\config\AppConfig.class

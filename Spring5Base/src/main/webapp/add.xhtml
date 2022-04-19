@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajouter utilisateur</title>
+</h:head>
+<h:body>
+
+<f:view>
+	<h:panelGrid columns="2" cellpadding="10">
+		<h:outputLink value="cars.jsf">
+			<h:outputText value="Lister" />
+		</h:outputLink>
+
+		<h:outputLink value="add.xhtml">
+			<h:outputText value="Ajouter" />
+		</h:outputLink>
+	</h:panelGrid>
+	<h:form>
+		<h:panelGrid border="0" columns="3" cellpadding="5">
+			<h:outputText value="model" />
+			<h:inputText id="model" value="#{carCtrl.newCar.model}"
+				required="true" requiredMessage="Model obligatoire" />
+			<h:message for="model" />
+
+			<h:outputText value="annee" />
+			<h:inputText id="annee" value="#{carCtrl.newCar.annee}"
+				required="true" requiredMessage="Annee obligatoire" />
+			<h:message for="annee" />
+			<h:outputText />
+			<h:commandButton value="Ajouter" action="#{carCtrl.createCar()}" />
+		</h:panelGrid>
+	</h:form>
+</f:view>
+</h:body>
+</html>

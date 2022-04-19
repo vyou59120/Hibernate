@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15756329516570" configfile="/Spring5Base/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="add" x="122" y="178" id="pf15760572055550" referenceLink="//@navigationRule.0/@fromViewId|" path="/add.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="list" x="122" y="562" id="pf15760572055552" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" path="/list.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="946" id="pf15781302408080" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15781302408081" path="/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="946" id="pf15781302408082" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15781302408081" path="/index.xhtml"/>
+  <links id="pf15781302408081" target="pf15781302408082" source="pf15781302408080" outcome="home" redirect="true"/>
+</pageflow:Pageflow>
